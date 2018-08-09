@@ -2,7 +2,7 @@
 
 module.exports = {
     get: (req,res) => {
-        res.send("hungit")
+        res.send("Test Heroku")
     }
 
 }
