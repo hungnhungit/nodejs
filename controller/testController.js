@@ -2,7 +2,7 @@
 
 module.exports = {
     get: (req,res) => {
-        res.send("hungnhung")
+        res.send("hungit")
     }
 
 }
