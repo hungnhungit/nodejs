@@ -7,7 +7,7 @@ var UserSchema = new Schema({
     name: {
         type: String,
     },
-    title: {
+    password: {
         type: String,
     },
     task : [{

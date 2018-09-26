@@ -8,5 +8,5 @@ module.exports = function (app) {
 
     app.get('/api/users/task/:id',usersController.findOneByTask);
   
-    
+    app.post('/api/authenticate',usersController.authenticate);
 }
