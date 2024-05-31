@@ -11,9 +11,6 @@
     "lint:fix": "eslint --fix",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.ts": "eslint --cache --fix"
-  },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
