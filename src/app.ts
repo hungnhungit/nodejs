@@ -1,5 +1,3 @@
-function fn([]) {
-	const a = 2;
-}
+function fn() {}
 
-fn([]);
+fn();
