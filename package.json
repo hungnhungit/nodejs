@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "format": "biome format --write ./src",
-    "lint": "biome lint --apply .",
+    "lint": "biome lint --apply src",
     "biome-check": "biome check --files-ignore-unknown=true ."
   },
   "lint-staged": {
