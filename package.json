@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "format": "biome format --write ./src",
-    "lint": "yarn biome lint --apply ./src"
+    "lint": "biome lint --apply .",
+    "biome-check": "biome check --files-ignore-unknown=true"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "biome format --write ./src"
+    "*.{ts,tsx}": "biome lint --apply"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
