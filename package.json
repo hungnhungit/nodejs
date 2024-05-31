@@ -10,7 +10,9 @@
     "biome-check": "biome check --files-ignore-unknown=true"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "biome lint --apply"
+    "*.{js,ts,tsx}": [
+      "biome lint --apply --no-errors-on-unmatched"
+    ]
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
