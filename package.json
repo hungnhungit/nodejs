@@ -5,14 +5,14 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "tsc": "tsc",
-    "test": "tsc --noEmit",
-    "lint:fix": "eslint --fix"
+    "format": "biome format --write ./src",
+    "lint": "yarn biome lint --apply ./src"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint --fix"
+    "*.{ts,tsx}": "biome format --write ./src"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.7.3",
     "@eslint/js": "^9.3.0",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
