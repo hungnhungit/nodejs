@@ -1,4 +1,6 @@
 function fn([]) {
-  const a = 2   ;
-  console.log('dasd')           ;
+  const a = 2;
+  console.log(a);
 }
+
+fn([]);

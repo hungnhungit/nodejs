@@ -7,9 +7,10 @@
   "scripts": {
     "tsc": "tsc",
     "test": "tsc --noEmit",
-    "lint": "lint-staged",
-    "lint:fix": "eslint --fix",
-    "prepare": "husky install"
+    "lint:fix": "eslint --fix"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
