@@ -7,11 +7,11 @@
   "scripts": {
     "format": "biome format --write ./src",
     "lint": "biome lint --apply .",
-    "biome-check": "biome check --files-ignore-unknown=true"
+    "biome-check": "biome check --files-ignore-unknown=true ."
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "biome lint --apply --no-errors-on-unmatched"
+      "eslint --fix"
     ]
   },
   "devDependencies": {
