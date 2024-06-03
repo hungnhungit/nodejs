@@ -3,7 +3,14 @@ name: MyApp CI
 
 run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 
-on: [push, pull_request, workflow_dispatch]
+on: 
+  workflow_dispatch:
+    inputs:
+      username:
+        description: 'A username passed from the caller workflow'
+        default: 'john-doe'
+        required: false
+        type: string
 
 jobs:
   build:
