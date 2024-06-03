@@ -3,11 +3,8 @@ name: MyApp CI
 
 run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: [push, pull_request, workflow_dispatch]
+
 jobs:
   build:
     runs-on: ubuntu-latest
