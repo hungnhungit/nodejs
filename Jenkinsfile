@@ -14,5 +14,11 @@ pipeline {
                 sh 'yarn'
             }
         }
+
+        stage('QA') {
+            steps {
+                sh 'yarn lint'
+            }
+        }
     }
 }
