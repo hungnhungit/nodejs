@@ -11,13 +11,16 @@ pipeline {
         // }
         stage('Build') {
             steps {
-                sh 'yarn'
+                script {
+                    sh 'yarn'
+                }
             }
         }
-
         stage('QA') {
             steps {
-                sh 'yarn lint'
+                script {
+                    sh 'yarn lint'
+                }
             }
         }
     }
