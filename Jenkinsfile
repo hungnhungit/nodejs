@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    tool name: 'NODEJS', type: 'nodejs'
     stages {
         // stage('Checkout') {
         //     steps {
