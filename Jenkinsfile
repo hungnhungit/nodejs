@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'yarn install'
+                    sh 'yarn -v'
                 }
             }
         }
