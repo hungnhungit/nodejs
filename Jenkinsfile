@@ -8,7 +8,9 @@ pipeline {
         // }
         stage('Build') {
             steps {
-                sh 'yarn'
+                script {
+                    sh 'yarn install'
+                }
             }
         }
     }
